@@ -13,3 +13,13 @@ tasks {
         gradleVersion = "8.5"
     }
 }
+
+dependencies {
+    implementation("org.testng:testng:7.7.0")
+    // Other dependencies.
+    testImplementation(kotlin("test"))
+}
+
+tasks.test {
+    useJUnitPlatform()
+}
